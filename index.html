@@ -4,39 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="peppa-logo.webp" alt="Logo for sign up page">
+        <img src="peppa-logo.webp" alt="Logo for sign up page" width="200" height="auto">
     </header>
-    <div>
+    <div class="sign-up">
         <div>
-            <p>
+            <p class="details">
                 This is totally a real online service. In fact, it's probably the best thing to exist on the internet.
 
                 Only cool kids allowed.
             </p>
         </div>
-        <div>
+        <div class="form-float">
             <h2>Say no more:</h2>
             <form>
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" placeholder="Peppa">
-
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" placeholder="Pig">
-
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="oink@gmail.com">
-
-                <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone">
-
-                <label for="pwd">Password</label>
-                <input type="password" name="pwd" id="pwd">
-
-                <label for="confirm-pwd">Confirm Password</label>
-                <input type="password" id="confirm-pwd">
+                <div class="form-field">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Peppa">
+                </div>
+                <div class="form-field">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Pig">
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="oink@gmail.com">
+                </div>
+                <div class="form-field">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div class="form-field">
+                    <label for="pwd">Password</label>
+                    <input type="password" name="pwd" id="pwd">
+                </div>
+                <div class="form-field">
+                    <label for="confirm-pwd">Confirm Password</label>
+                    <input type="password" id="confirm-pwd">
+                </div>
 
                 <button type="submit">Create Account</button>
             </form>

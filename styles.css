@@ -4,3 +4,60 @@
     box-sizing: border-box;
 }
 
+html, body, header, .sign-up {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header {
+    background-image: url("cool-peppa.jpg");
+    background-size: 100% auto; /* Fill width */
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: #8cbbe3; /* Fill in sky above image */
+    flex: 1;
+    text-align: center;
+}
+
+header img {
+    width: 250px;
+    margin-top: 20px;
+}
+
+.sign-up {
+    flex: 2;
+    background-color: #f0bcd6;
+}
+
+.sign-up > div {
+    padding: 35px 50px;
+}
+
+.details {
+    width: 450px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-float {
+    background-color: #f7ddea;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 400px;
+}
+
+.form-field {
+    width: 200px;
+    margin-bottom: 20px;
+}
