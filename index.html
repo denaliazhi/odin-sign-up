@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,22 +15,23 @@
     </header>
     <div class="sign-up">
         <div>
-            <p class="details">
-                This is totally a real online service. In fact, it's probably the best thing to exist on the internet.
-
+            <p class="description">
+                Hey you. Do you know what this is? 
+                It's the most <i>exclusive</i> club on the internet.
                 Only cool kids allowed.
             </p>
         </div>
-        <div class="form-float">
-            <h2>Say no more:</h2>
-            <form>
+        <div class="form-wrapper">
+            <h2>Say no more</h2>
+            <p class="small-text">Required fields marked by *</p>
+            <form id="form-body">
                 <div class="form-field">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Peppa">
+                    <label for="first-name">First Name *</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Peppa" required>
                 </div>
                 <div class="form-field">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Pig">
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Pig" required>
                 </div>
                 <div class="form-field">
                     <label for="email">Email</label>
@@ -35,21 +39,22 @@
                 </div>
                 <div class="form-field">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone">
+                    <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </div>
                 <div class="form-field">
-                    <label for="pwd">Password</label>
-                    <input type="password" name="pwd" id="pwd">
+                    <label for="pwd">Password *</label>
+                    <input type="password" name="pwd" id="pwd" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
                 </div>
                 <div class="form-field">
                     <label for="confirm-pwd">Confirm Password</label>
-                    <input type="password" id="confirm-pwd">
+                    <input type="password" id="confirm-pwd" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
                 </div>
-
-                <button type="submit">Create Account</button>
             </form>
         </div>
-        <div></div>
+        <div>
+            <button type="submit" form="form-body">Create Account</button>
+            <p class="small-text">Already a member? <a href="">Sign in</a></p>
+        </div>
     </div>
 </body>
 </html>
