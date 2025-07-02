@@ -59,10 +59,11 @@ header img:hover {
 .sign-up {
     flex: 2; /* Keep width two-thirds of screen */
     background-color: var(--lightpink);
+    padding-bottom: 40px;
 }
 
 .sign-up > div {
-    padding: 40px;
+    padding: 40px 40px 0;
 }
 
 /* Stuff above form body */
@@ -95,13 +96,13 @@ header img:hover {
     flex-wrap: wrap;
 
     text-align: left;
+    gap: 10px;
 
     width: clamp(100px, 90%, 420px);
 }
 
 .form-field {
     width: clamp(50px, 80%, 200px);
-    margin: 0 10px 20px 0;
 }
 
 label {
