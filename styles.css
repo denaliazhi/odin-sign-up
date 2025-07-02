@@ -22,8 +22,8 @@ html {
     letter-spacing: 0.03ch;
 }
 
-html, body, header, .sign-up {
-    height: 100vh; /* Fill screen */
+html, body, header {
+    height: 100%; /* Fill screen */
 }
 
 body {
@@ -63,17 +63,14 @@ header img:hover {
 }
 
 .sign-up > div {
-    padding: 40px 40px 0;
+    padding: 40px 0 0 80px;
 }
 
 /* Stuff above form body */
 .description {
+    padding-top: 30px;
     width: clamp(200px, 90%, 420px);
     color: var(--darkpink);
-}
-
-.form-wrapper {
-    background-color: var(--lightpink);
 }
 
 .form-wrapper > h2 {
@@ -82,7 +79,7 @@ header img:hover {
     color: var(--blue);
 }
 
-.small-text {
+.small-text, label {
     color: var(--darkpink);
     font-size: 12px;
     margin: 10px 0 20px;
@@ -103,14 +100,6 @@ header img:hover {
 
 .form-field {
     width: clamp(50px, 80%, 200px);
-}
-
-label {
-    color: var(--darkpink);
-}
-
-.form-field:focus {
-    color: black;
 }
 
 input {
@@ -149,6 +138,6 @@ button:hover {
 }
 
 a {
-    color: var(--darkpink);
+    color: var(--blue);
     text-decoration: none;
 }
